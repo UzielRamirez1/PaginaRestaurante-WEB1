@@ -1,0 +1,542 @@
+/*CSS GENERAL QUE APARECE EN TODAS LAS PAGINAS*/
+#footer{
+  height: 110px;
+  background-color: rgba(203, 3, 3);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style:double;
+  margin-top: 80px;
+  margin-bottom: none;
+}
+#datos{
+  padding: 10px;
+  margin-right: 15px;
+}
+#datos2{
+  margin-right: 15px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/*PATRONES DE LOS LADOS DE LA PAGINA*/
+/* Imagen izquierda */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45px;              
+  height: 100%;
+  background: url("patron.avif") repeat-y;
+  background-size: auto;   
+  z-index: -1;              
+}
+
+/* Imagen derecha */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  background: url("patron.avif") repeat-y;
+  background-size: auto;
+  z-index: -1;
+}
+
+.header{
+  background-color: rgba(203, 3, 3);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: none;
+  border-style:double;
+}
+.titulo{
+  font-family: 'Courier New';
+  font-size: large;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.tabla{
+  font-family:'Georgia';
+  padding: 10px;
+  margin-right: 15px;
+}
+
+#contenido{
+  background-color: beige;
+  margin:0;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(132, 176, 44);
+}
+
+ul li a{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+ul li a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/*CSS DEL INICIO*/
+#Inicio{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-left: 90px;
+}
+.info{
+  font-family:'Verdana';
+  font-size: 20px;
+  margin-left: 30px;
+}
+.info:hover{
+  font-size: 25px;
+  font-style: italic;
+}
+#lema{
+  margin-left: 33%;
+}
+.imagen-lateral {
+  position: absolute;
+  top: 500px;
+  width: 300px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; 
+}
+
+/* Imagen izquierda */
+.imagen-lateral.izquierda {
+    left: 1px; 
+    background-image: url("ramasakura.webp");
+}
+
+/* Imagen derecha */
+.imagen-lateral.derecha {
+    right: 1px; 
+    background-image: url("ramasakura.webp");
+    transform: scaleX(-1);
+}
+
+#lema:hover ~ .imagen-lateral {
+    opacity: 1;
+    cursor: none;
+}
+
+#botonReserva{
+  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-left: 6%;
+}
+#botonReserva:hover{
+  cursor: pointer;
+}
+#reserva{
+  margin-top: 50px;
+  margin-left: 41%;
+}
+
+/*CSS DEL MENU DE COMIDA*/
+.opmenu{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium';
+  margin-left: 15px;
+}
+.opmenu:hover{
+  color:red;
+  cursor: pointer;
+  font-size: 38px; 
+}
+#menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-left: 15%;
+}
+.paquetes li {
+  position: relative;
+  width: fit-content; 
+}
+
+.paquetes .paquete{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.paquete{
+  color: black;
+}
+.paquetes li:hover .paquete{
+  max-height: 200px;
+}
+
+.tooltip {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.tooltip::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -25px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 3px 6px;    
+  font-size: 10px;       
+  border-radius: 4px; 
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+  border-style:double;
+}
+
+.tooltip:hover::after {
+  opacity: 1;
+}
+/*CSS DE LA GALERIA*/
+
+#galeria{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-left: 90px;
+  margin-top: 40px;
+}
+/*Seccion fotos de fuera*/
+#titulofuera{
+  margin-left: 20px;
+}
+.fueraG{
+  position: relative;
+  width: 200px;
+  height: 150px;
+  cursor: pointer;
+  margin-left: 80px;
+  margin-top: 140px;
+}
+.fueraG .fotofu{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 10px;
+}
+.fueraG:hover .f1 {
+  transform: translateX(-120px) rotate(-10deg) scale(1.25);
+  
+}
+
+.fueraG:hover .f2 {
+  transform: translateY(-120px) rotate(5deg) scale(1.25);
+ 
+}
+
+.fueraG:hover .f3 {
+  transform: translateX(120px) rotate(12deg) scale(1.25);
+  
+}
+
+/*Seccion fotos dentro*/
+.dentroG{
+  position: relative;
+  width: 200px;
+  height: 180px;
+  cursor: pointer;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.dentroG .fotoade{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  border-radius: 10px;
+}
+.dentroG:hover .f1 {
+  transform: translateX(-120px) rotate(-10deg) scale(1.4);
+}
+
+.dentroG:hover .f3 {
+  transform: translateX(120px) rotate(12deg) scale(1.4);
+}
+
+/*Seccion de las entradas*/
+
+#tituloentradas{
+    margin-left: 20px;
+}
+#entradasG{
+  position: relative;
+  width: 400px;   
+  height: 300px;
+}
+.fotoentrada{
+  position: absolute;
+  width: 200px; 
+  transition: transform 0.3s, z-index 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fotoentrada:nth-child(1) {
+  top: 20;
+  left: 20;
+  z-index: 1;
+}
+
+.fotoentrada:nth-child(2) {
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.fotoentrada:nth-child(3) {
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.fotoentrada:nth-child(4) {
+  top: 110px;
+  left: 110px;
+  z-index: 4;
+}
+.fotoentrada:nth-child(5){
+  top: 140px;
+  left: 140px;
+  z-index: 5;
+}
+.fotoentrada:hover {
+  transform: scale(1.25); 
+  z-index: 999;          
+}
+
+/*seccion platos principales*/
+
+#platosPrincipalesG{
+  position: relative;
+  width: 400px;   
+  height: 300px;
+}
+.fotoplato{
+  position: absolute;
+  width: 200px; 
+  transition: transform 0.3s, z-index 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.fotoplato:nth-child(1) {
+  top: 20;
+  left: 20;
+  z-index: 1;
+}
+
+.fotoplato:nth-child(2) {
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.fotoplato:nth-child(3) {
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.fotoplato:nth-child(4) {
+  top: 110px;
+  left: 110px;
+  z-index: 4;
+}
+.fotoplato:nth-child(5){
+  top: 140px;
+  left: 140px;
+  z-index: 5;
+}
+.fotoplato:hover {
+  transform: scale(1.25); 
+  z-index: 999;          
+}
+
+/*seccion de postres*/
+#postresG{
+  position: relative;
+  width: 400px;   
+  height: 300px;
+  margin-bottom: 40px;
+}
+#tituloPostres{
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.fotopo{
+  position: absolute;
+  width: 200px; 
+  transition: transform 0.3s, z-index 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fotopo:nth-child(1) {
+  top: 20;
+  left: 20;
+  z-index: 1;
+}
+
+.fotopo:nth-child(2) {
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.fotopo:nth-child(3) {
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.fotopo:nth-child(4) {
+  top: 110px;
+  left: 110px;
+  z-index: 4;
+}
+.fotopo:nth-child(5){
+  top: 140px;
+  left: 140px;
+  z-index: 5;
+}
+.fotopo:hover {
+  transform: scale(1.25); 
+  z-index: 999;          
+}
+/*seccion de bebidas*/
+#bebidasG{
+  position: relative;
+  width: 400px;   
+  height: 300px;
+  margin-bottom: 40px;
+}
+#tituloBebidas{
+  margin-top: 100px;
+}
+.fotobe{
+  position: absolute;
+  width: 200px; 
+  transition: transform 0.3s, z-index 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.fotoebe:nth-child(1) {
+  top: 20;
+  left: 20;
+  z-index: 1;
+}
+
+.fotobe:nth-child(2) {
+  top: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+.fotobe:nth-child(3) {
+  top: 80px;
+  left: 80px;
+  z-index: 3;
+}
+
+.fotobe:nth-child(4) {
+  top: 110px;
+  left: 110px;
+  z-index: 4;
+}
+.fotobe:nth-child(5){
+  top: 140px;
+  left: 140px;
+  z-index: 5;
+}
+.fotobe:hover {
+  transform: scale(1.25); 
+  z-index: 999;          
+}
+/*CSS DE LAS PROMOCIONES*/
+
+.promociones{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-left: 65px;
+  margin-top: 40px;
+}
+.titulospromociones{
+  margin-left: 35%;
+}
+.explicacionpromo{
+  margin-left: 23%;
+  font-size: 20px;
+}
+.promocion{
+  font-size: 20px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;   
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;  
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  overflow: hidden;           
+  cursor: pointer;
+  position: relative;
+  margin-right: 80px;
+}
+.promocion .infoextra{
+  opacity: 0;
+  margin-top: 20px;
+  transition: opacity 0.4s ease, margin-top 0.4s ease;
+}
+.promocion:hover{
+  font-family: fantasy;
+  font-size: 23px;
+  transform: scale(1.05); 
+}
+.promocion:hover .infoextra{
+  opacity: 1;
+  margin-top: 10px;   
+}
