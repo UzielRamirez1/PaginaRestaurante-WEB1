@@ -6,6 +6,8 @@
     <title>Menu</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+<!--HEADER QUE INCLUYE LA BARRA DE NAVEGACION PARA VIAJAR ENTRE LOS 
+ARCHIVOS HTML, NOMBRE DEL RESTAURANTE Y LOGO-->
 <header class="header">
     <div class="titulo">
         <h1>SAKURA</h1>
@@ -32,54 +34,289 @@
 </header>
 <body id="contenido">
     <section id="menu">
+        <!--SECCION DE ENTRADAS DEL MENU 
+        CADA PLATO INCLUYE UNA DESCIPCION Y 3 TOPPINGS-->
         <section id="entradas">
             <h1>Aperitivos / Entradas</h1>
-            <div class="opmenu">
+            <div class="opmenu paquetes">
                 <ul>
-                    <li><a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">gyoza</a></li>
-                    <li><a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Sunomono</a></li>
-                    <li><a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Edamame</a></li>
-                    <li><a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Harumaki</a></li>
-                    <li><a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Galletas</a></li>
+                    <li>
+                        <a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">gyoza</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Empanadillas rellenas y doradas</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Cebollin picado</li>
+                                <li>Ajonoli tostado</li>
+                                <li>Salsa ponzu</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Sunomono</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Ensalada avinagrada y refrescante</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Ajonjoli</li>
+                                <li>Alga wakame</li>
+                                <li>Camaron pequeño</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Edamame</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Vainas de soya tibias o al vapor</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Sal de mar</li>
+                                <li>Ajo picado</li>
+                                <li>Chile seco</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Harumaki</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Rollitos fritos rellenos de vegetales</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Salsa agridulce</li>
+                                <li>Salsa de soya</li>
+                                <li>Cebollin</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#entradasG" class="tooltip" data-title="Ir a Galeria">Galletas</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Galletas crujientes de arroz tostado</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Salsa de soya</li>
+                                <li>Alga nori</li>
+                                <li>Ajonjoli negro</li>
+                            </ul>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
+        <!--SECCION DE PLATOS PRINCIPALES DEL MENU
+        CADA PLATO INCLUYE UNA DESCRIPCION Y 3 O MAS TOPPINGS-->
         <section id="platos">
             <h1>Platos Principales</h1>
-            <div class="opmenu">
+            <div class="opmenu paquetes">
                 <ul>
-                    <li><a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Ramen</a></li>
-                    <li><a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Maki/Sushi rolls</a></li>
-                    <li><a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Chicken Teriyaki</a></li>
-                    <li><a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Fideos Udon</a></li>
-                    <li><a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Sopa Miso</a></li>
+                    <li>
+                        <a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Ramen</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Sopa con fideos y caldo</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Chashu (cerdo laminado)</li>
+                                <li>Huevo marinado</li>
+                                <li>Cebollin</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Maki/Sushi rolls</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Rollos de arroz envueltos en alga</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Ajonjoli</li>
+                                <li>Masago</li>
+                                <li>Aguacate</li>
+                                <li>Salmon</li>
+                                <li>Pepino</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Chicken Teriyaki</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Pollo glaseado con salsa dulce-salada</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Ajonjoli tostado</li>
+                                <li>Cebollin</li>
+                                <li>Jengibre encurtido</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Fideos Udon</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Fideos gruesos en caldo ligero</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Tempura (Camaron/Verdura)</li>
+                                <li>Kamaboko</li>
+                                <li>Nori</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#platosPrincipalesG" class="tooltip" data-title="Ir a Galeria">Sopa Miso</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Caldo de miso con ingredientes suaves</li>
+                            <p>Toppings:</p>
+                            <ul>
+                                <li>Tofu</li>
+                                <li>Wakame</li>
+                                <li>Cebollin</li>
+                            </ul>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
+        <!--SECCION DE POSTRES DEL MENU
+        CADA POSTRE INCLUYE UNA PEQUEÑA DESCRIPCION 
+        Y 3 OPCIONES DE SABORES-->
         <section id="postres">
             <h1>Postres</h1>
-            <div class="opmenu">
+            <div class="opmenu paquetes">
                 <ul>
-                    <li><a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Mochi</a></li>
-                    <li><a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Dango</a></li>
-                    <li><a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Taiyaki</a></li>
-                    <li><a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Dorayaki</a></li>
-                    <li><a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Parfait</a></li>
+                    <li>
+                        <a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Mochi</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Pastelito de arroz glutinoso</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Matcha</li>
+                                <li>Fresa</li>
+                                <li>Anki (pasta de frijol rojo)</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Dango</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Bolitas de arroz en brocheta</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Salsa mitarashi</li>
+                                <li>Kinako</li>
+                                <li>Sésamo negro</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Taiyaki</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Pastelito con forma de pez relleno.</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Crema pastelera</li>
+                                <li>Chocolate</li>
+                                <li>Camote morado</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Dorayaki</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Panquecitos rellenos estilo sándwich</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Anko tradicional</li>
+                                <li>Matcha crema</li>
+                                <li>Nutella</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#postresG" class="tooltip" data-title="Ir a Galeria">Parfait</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Postre en vaso con capas variadas</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Matcha</li>
+                                <li>Mango</li>
+                                <li>Frutos Rojos</li>
+                            </ul>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
+        <!--SECCION DE BEBIDAS DEL MENU 
+        CADA BEBIDA CUENTA CON UNA PEQUEÑA EXPLICACION DE QUE ES 
+        Y 3 SABORES COMPLEMENTARIOS QUE PUEDE PEDIR EL CLIENTE-->
         <section id="bebidas">
             <h1>Bebidas</h1>
-            <div class="opmenu">
+            <div class="opmenu paquetes">
                 <ul>
-                    <li><a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Calpis</a></li>
-                    <li><a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Te matcha</a></li>
-                    <li><a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Sake</a></li>
-                    <li><a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Soda Ramune</a></li>
-                    <li><a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Sakura Latte</a></li>
+                    <li>
+                        <a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Calpis</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>bebida base de leche fermentada con un sabor suave</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Kiwi amarillo</li>
+                                <li>Maracuya</li>
+                                <li>Kyoho (Uva)</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Te matcha</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Te verde</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Vainilla</li>
+                                <li>Frutos Rojos</li>
+                                <li>Leche de almedra/coco</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Sake</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Bebida fermentada hecha de: agua, arroz, <br>
+                                levadura y Koji </li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Yuzu (citrico)</li>
+                                <li>Jengibre</li>
+                                <li>Ciruela</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Soda Ramune</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Soda pupular japonesa</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Melon</li>
+                                <li>Kyoho (Uva)</li>
+                                <li>Lichi</li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="galeria.html#bebidasG" class="tooltip" data-title="Ir a Galeria">Sakura Latte</a>
+                        <ul class="explicacion_comida paquete">
+                            <li>Latte saborizado con la flor de sakura</li>
+                            <p>Sabores complementarios:</p>
+                            <ul>
+                                <li>Fresa</li>
+                                <li>Leche de Vainilla</li>
+                                <li>Miel</li>
+                            </ul>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
+        <!--SECCION DE PAQUETES DEL MENU
+        CADA PAQUETE AL REVISARLO MUESTRA QUE ES LO QUE INCLUYE-->
         <section>
             <h1>Paquetes</h1>
             <div class="opmenu">
@@ -120,6 +357,7 @@
         </section>
     </section>
 </body>
+<!--FOOTER CON DATOS DEL AUTOR-->
 <footer>
     <div id="footer">
         <div id="datos"><h3>Uziel Ramirez Bravo</h3>

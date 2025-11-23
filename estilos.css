@@ -158,6 +158,9 @@ ul li a:hover {
 }
 
 /*CSS DEL MENU DE COMIDA*/
+.explicacion_comida{
+  font-size: 20px;
+}
 .opmenu{
   font-size: 30px;
   font-family: 'Franklin Gothic Medium';
@@ -293,54 +296,80 @@ ul li a:hover {
 /*Seccion de las entradas*/
 
 #tituloentradas{
-    margin-left: 20px;
-}
-#entradasG{
-  position: relative;
-  width: 400px;   
-  height: 300px;
-}
-.fotoentrada{
-  position: absolute;
-  width: 200px; 
-  transition: transform 0.3s, z-index 0.3s;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
   margin-left: 20px;
 }
 
-.fotoentrada:nth-child(1) {
-  top: 20;
-  left: 20;
+#entradasG{
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.itementrada {
+  position: absolute;
+  transition: transform 0.3s, z-index 0.3s;
+}
+
+.fotoentrada {
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, z-index 0.3s;
+}
+
+.tituloentrada {
+  position: absolute;
+  top: 0%;
+  left: 210px; 
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.itementrada:hover .tituloentrada {
+  opacity: 1;
+}
+
+.itementrada:nth-child(1) {
+  top: 20px;
+  left: 20px;
   z-index: 1;
 }
 
-.fotoentrada:nth-child(2) {
+.itementrada:nth-child(2) {
   top: 40px;
   left: 40px;
   z-index: 2;
 }
 
-.fotoentrada:nth-child(3) {
+.itementrada:nth-child(3) {
   top: 80px;
   left: 80px;
   z-index: 3;
 }
 
-.fotoentrada:nth-child(4) {
+.itementrada:nth-child(4) {
   top: 110px;
   left: 110px;
   z-index: 4;
 }
-.fotoentrada:nth-child(5){
+
+.itementrada:nth-child(5) {
   top: 140px;
   left: 140px;
   z-index: 5;
 }
-.fotoentrada:hover {
-  transform: scale(1.25); 
-  z-index: 999;          
+
+.itementrada:hover {
+  transform: scale(1.25);
+  z-index: 999;
 }
 
 /*seccion platos principales*/
@@ -350,6 +379,12 @@ ul li a:hover {
   width: 400px;   
   height: 300px;
 }
+
+.itemprincipal{
+  position: absolute;
+  transition: transform 0.3s, z-index 0.3s;
+}
+
 .fotoplato{
   position: absolute;
   width: 200px; 
@@ -357,35 +392,53 @@ ul li a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
-.fotoplato:nth-child(1) {
+.tituloprincipal{
+  position: absolute;
+  top: 0%;
+  left: 210px; 
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+.itemprincipal:hover .tituloprincipal{
+  opacity: 1;
+}
+.itemprincipal:nth-child(1) {
   top: 20;
   left: 20;
   z-index: 1;
 }
 
-.fotoplato:nth-child(2) {
+.itemprincipal:nth-child(2) {
   top: 40px;
   left: 40px;
   z-index: 2;
 }
 
-.fotoplato:nth-child(3) {
+.itemprincipal:nth-child(3) {
   top: 80px;
   left: 80px;
   z-index: 3;
 }
 
-.fotoplato:nth-child(4) {
+.itemprincipal:nth-child(4) {
   top: 110px;
   left: 110px;
   z-index: 4;
 }
-.fotoplato:nth-child(5){
+.itemprincipal:nth-child(5){
   top: 140px;
   left: 140px;
   z-index: 5;
 }
-.fotoplato:hover {
+.itemprincipal:hover {
   transform: scale(1.25); 
   z-index: 999;          
 }
@@ -401,6 +454,10 @@ ul li a:hover {
   margin-left: 20px;
   margin-top: 100px;
 }
+.itempostre{
+  position: absolute;
+  transition: transform 0.3s, z-index 0.3s;
+}
 .fotopo{
   position: absolute;
   width: 200px; 
@@ -410,36 +467,53 @@ ul li a:hover {
   margin-top: 20px;
   margin-left: 20px;
 }
-
-.fotopo:nth-child(1) {
+.titulopostre{
+  position: absolute;
+  top: 0%;
+  left: 210px; 
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+.itempostre:hover .titulopostre{
+  opacity: 1;
+}
+.itempostre:nth-child(1) {
   top: 20;
   left: 20;
   z-index: 1;
 }
 
-.fotopo:nth-child(2) {
+.itempostre:nth-child(2) {
   top: 40px;
   left: 40px;
   z-index: 2;
 }
 
-.fotopo:nth-child(3) {
+.itempostre:nth-child(3) {
   top: 80px;
   left: 80px;
   z-index: 3;
 }
 
-.fotopo:nth-child(4) {
+.itempostre:nth-child(4) {
   top: 110px;
   left: 110px;
   z-index: 4;
 }
-.fotopo:nth-child(5){
+.itempostre:nth-child(5){
   top: 140px;
   left: 140px;
   z-index: 5;
 }
-.fotopo:hover {
+.itempostre:hover {
   transform: scale(1.25); 
   z-index: 999;          
 }
@@ -453,6 +527,10 @@ ul li a:hover {
 #tituloBebidas{
   margin-top: 100px;
 }
+.itembebida{
+  position: absolute;
+  transition: transform 0.3s, z-index 0.3s;
+}
 .fotobe{
   position: absolute;
   width: 200px; 
@@ -462,36 +540,53 @@ ul li a:hover {
   margin-top: 20px;
   margin-left: 20px;
 }
-
-.fotoebe:nth-child(1) {
+.titulobebida{
+  position: absolute;
+  top: 0%;
+  left: 210px; 
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  padding: 6px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: bold;
+}
+.itembebida:hover .titulobebida{
+  opacity: 1;
+}
+.itembebida:nth-child(1) {
   top: 20;
   left: 20;
   z-index: 1;
 }
 
-.fotobe:nth-child(2) {
+.itembebida:nth-child(2) {
   top: 40px;
   left: 40px;
   z-index: 2;
 }
 
-.fotobe:nth-child(3) {
+.itembebida:nth-child(3) {
   top: 80px;
   left: 80px;
   z-index: 3;
 }
 
-.fotobe:nth-child(4) {
+.itembebida:nth-child(4) {
   top: 110px;
   left: 110px;
   z-index: 4;
 }
-.fotobe:nth-child(5){
+.itembebida:nth-child(5){
   top: 140px;
   left: 140px;
   z-index: 5;
 }
-.fotobe:hover {
+.itembebida:hover {
   transform: scale(1.25); 
   z-index: 999;          
 }
